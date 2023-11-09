@@ -6,7 +6,7 @@
 
 /* Navbar-Section */
 .Navbar{
-    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+    box-shadow: 0 30px 40px -20px rgb(40 44 63 / 15%);
     position: fixed;
     top: 0;
     left: 0;
@@ -19,14 +19,145 @@
 }
 
 .Navbar .nav{
-    max-width: 600px;
+    max-width: 700px;
     min-width: 900px;
     position: relative;
-    margin: 60px;
+    margin: 0px;
     display: flex;
     justify-content: space-between;
 }
 .nav .left{
     display: flex;
     align-items: center;
+    margin-top: 20px;
+}
+.nav .left .logo{
+    display: block;
+    height: 50px;
+    margin-right: 20px;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.left .logo:hover {
+    transform: scale(1.1);
+
+}
+
+.Navbar .location-div{
+    display: flex;
+    position:relative ;
+    align-items: center;
+    margin-left: 10px;
+    height: 30px;
+    cursor: pointer;
+    padding-right: 10px;
+    font-size: 700;
+    
+}
+.location-div .other{
+    font-weight: 700;
+    float: left;
+    padding-bottom: 1px;
+    border-bottom: 2px;
+
+
+}
+.location-div .other:hover{
+    color: #fc8109;
+    border-bottom:2px solid #fc8109;
+}
+.location-div .Location{
+    padding-left: 5px;
+    display: block;
+    font-weight: 300;
+    color: #686b78;
+}
+
+.location-div .Arrow-down{
+    position: absolute;
+    color: #fc8109;
+    top: 50%;
+    right: -6%;
+    transform: translateY(-50%);
+}
+.location-div .Right{
+    position:relative;
+}
+.Right .Items{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 36px;
+    color: #3d4152;
+    font-size: 16px;
+    font-weight: 500;
+}
+.Items .class-item{
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    position: relative;
+    height: 80px;
+    cursor: pointer;
+
+}
+.Items .class-item a{
+    display: flex;
+    align-items: center;
+    color: #3d4152;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+.class-item a span{
+    padding-left: 11px;
+}
+.restaraunt .container{
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-color: #fff;
+    left: 30px;
+
+}
+.container .item-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-bar .number{
+    font-weight: 600;
+    font-size: 28px;
+    color: #3d4152;
+    margin-top: -3px;
+}
+.item-bar::after{
+    color: #3d4152;
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 81px;
+    height: 1px;
+    background-color: #e9e9eb;
+}
+
+.item-bar .filter{
+    display: flex;
+    align-items: center;
+}
+
+.filter div{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 35px;
+    color: #3d4152;
+    cursor: pointer;
+}
+.filter div:hover{
+    color: #3d4152;
+    border-bottom: 2px solid;
 }
